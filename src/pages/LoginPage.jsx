@@ -13,11 +13,11 @@ const LoginPage = () => {
 
     // Redirect based on role
     if (savedRole === 'Recruiter') {
-      navigate("/recruiter-dashboard");
+      navigate("/student-dashboard");
     } else if (savedRole === 'Student') {
       navigate("/student-dashboard");
     } else {
-      navigate("/home"); // Fallback
+      navigate("/student-dashboard"); // Fallback
     }
   };
 

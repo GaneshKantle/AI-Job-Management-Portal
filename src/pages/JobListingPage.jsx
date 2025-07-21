@@ -22,7 +22,7 @@ const JobListingPage = () => {
 
   // Fetch jobs from backend
   useEffect(() => {
-    fetch('http://localhost:4000/api/jobs')
+    fetch('https://ai-job-management-portal.onrender.com/api/jobs')
       .then(res => res.json())
       .then(data => {
         setJobs(data);
@@ -46,7 +46,7 @@ const JobListingPage = () => {
 
   const handleApply = async (job) => {
     try {
-      const res = await fetch('http://localhost:4000/api/apply', {
+      const res = await fetch('https://ai-job-management-portal.onrender.com/api/apply', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

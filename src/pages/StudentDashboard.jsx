@@ -12,7 +12,7 @@ const StudentDashboard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/applied?userId=${USER_ID}`)
+    fetch(`https://ai-job-management-portal.onrender.com/api/applied?userId=${USER_ID}`)
       .then(res => res.json())
       .then(data => {
         // Sort by appliedAt descending and take the first 4 (most recent)

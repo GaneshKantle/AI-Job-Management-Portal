@@ -55,10 +55,7 @@ const LoginPage = () => {
             <div className="form-control">
               <button type="submit" className="btn btn-primary w-full">Login</button>
             </div>
-
-            {/* <p className="text-center text-sm mt-4">
-              Don't have an account? <Link to="/register" className="link link-primary">Sign Up</Link>
-            </p> */}
+  
           </form>
         </div>
       </div>
